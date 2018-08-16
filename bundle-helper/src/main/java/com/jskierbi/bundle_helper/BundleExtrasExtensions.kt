@@ -24,7 +24,7 @@ inline fun <reified T : Any?> android.app.Fragment.lazyArg(key: String)
 
 /** Start activity from fragment with given extras */
 inline fun <reified T : Any> android.support.v4.app.Fragment.startActivity(vararg extras: Pair<String, Any?> = emptyArray()) {
-  activity.startActivity<T>(*extras)
+  activity?.startActivity<T>(*extras)
 }
 
 /** Start activity from fragment with given extras */
