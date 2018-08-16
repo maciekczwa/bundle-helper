@@ -17,12 +17,12 @@ apply plugin: 'kotlin-android'
 def libVersion = "0.9.1"
 
 android {
-  compileSdkVersion 25
+  compileSdkVersion 27
   buildToolsVersion '27.0.3'
 
   defaultConfig {
     minSdkVersion 15
-    targetSdkVersion 23
+    targetSdkVersion 27
     versionCode 1
     versionName libVersion
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -36,9 +36,9 @@ android {
 }
 
 dependencies {
-  compileOnly 'com.android.support:appcompat-v7:25.4.0'
+  compileOnly 'com.android.support:appcompat-v7:27.1.1'
   compileOnly "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  compileOnly 'org.parceler:parceler-api:1.1.2'
+  compileOnly 'org.parceler:parceler-api:1.1.9'
 
   testImplementation 'junit:junit:4.12'
   testImplementation 'org.mockito:mockito-inline:2.8.47'
